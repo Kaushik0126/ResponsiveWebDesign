@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li>
+          <a class="nav-link" href="#Conditional_statements"
+          >Conditional statements</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li>
+          <a class="nav-link" href="#Functions"
+          >Functions</a
+          >
+        </li>
+        <li>
+            <a class="nav-link" href="#Lists"
+              >Lists</a
+            >
+        </li>
+        <li>
+          <a class="nav-link" href="#Dictionaries"
+            >Dictionaries</a
+          >
+      </li> 
+      <li>
+        <a class="nav-link" href="#Classes_and_objects"
+          >Classes and objects</a
+        >
+    </li>  
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <p>
+                Python is a high-level, interpreted, and versatile programming language. It was created with an emphasis on code readability and simplicity, making it an excellent choice for beginners and experienced developers alike.
+            </p>
+        <p>
+            Python comes with a comprehensive standard library, providing a wide range of modules and packages for various tasks, such as file handling, networking, and data manipulation. It also offers a core set of language features, including data types, control structures, and functions, that form the foundation for building powerful applications.
+        </p>
+        <ul>
+            <li>
+                General Python extends the core language and offers a plethora of modules and libraries to accomplish a wide array of tasks. For example, you can use modules to handle regular expressions, perform mathematical computations, and work with dates and times.
+            </li>
+            <li>
+                Web Development with Python provides frameworks like Django and Flask, which facilitate the development of web applications, handling HTTP requests, and generating dynamic content.
+            </li>
+            <li>
+                Data Science with Python involves using libraries like NumPy, Pandas, and Matplotlib for data manipulation, analysis, and visualization.
+            </li>
+            <li>
+                Scripting with Python allows you to automate repetitive tasks, interact with files, and manage system resources efficiently.
+            </li>
+            <li>
+                Machine Learning and Artificial Intelligence can be achieved using libraries such as TensorFlow and PyTorch, empowering developers to build intelligent applications and models.
+            </li>
+            <li>
+                Server-side Python, with frameworks like Flask and FastAPI, enables the development of robust APIs and web services, handling client requests and serving dynamic content.
+            </li>
+        </ul>
+    </article>
+    </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+            <p>This guide assumes you have the following basic background:</p>
+        <ul>
+            <li>
+                A general understanding of computer programming concepts and principles.
+            </li>
+            <li>Good working knowledge of Python programming language.</li>
+            <li>
+                Some familiarity with basic programming constructs such as variables, loops, and functions.
+            </li>
+        </ul>
+    </article>
+    </section>
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <article>
+          To get started with writing Python, open your preferred Python environment or code editor and write your first "Hello world" Python code:
+          <code>print("Hello world")</code>
+      Run the code, and you should see the "Hello world" message displayed in the output.
+  </article>
+  </section>
+  <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <article>
+          In Python, you use variables as symbolic names for values in your application. Variable names, also known as identifiers, must conform to certain rules:
+          <ul>
+              <li>A variable name must start with a letter (a-z, A-Z) or an underscore (_).</li>
+              <li>Subsequent characters in the variable name can be letters, digits (0-9), or underscores.</li>
+              <li>Variable names are case-sensitive, meaning "myVariable" and "myvariable" are considered different variables.</li>
+          </ul>
+          You can create and assign values to variables using the assignment operator (=). For example:
+          <code>age = 25</code>
+      Python is a dynamically typed language, meaning you do not need to explicitly specify the variable type. Python will infer the type based on the assigned value.
+  </article>
+  </section>
+  <section class="main-section" id="Data_types">
+      <header>Data types</header>
+      <article>
+          Python supports several data types, including:
+          <ul>
+              <li>int: Integer values, e.g., 42, -10, 0.</li>
+              <li>float: Floating-point values, e.g., 3.14, -0.5.</li>
+              <li>str: String values, e.g., "Hello", 'Python'.</li>
+              <li>bool: Boolean values, either True or False.</li>
+              <li>list: An ordered collection of elements, e.g., [1, 2, 3].</li>
+              <li>tuple: Similar to lists but immutable, e.g., (1, 2, 3).</li>
+              <li>dict: A collection of key-value pairs, e.g., {'name': 'John', 'age': 30}.</li>
+              <li>set: An unordered collection of unique elements, e.g., {1, 2, 3}.</li>
+          </ul>
+          Python uses dynamic typing, allowing variables to change data types during runtime. For example, you can assign an integer value to a variable and later reassign it to a string value.
+      </article>
+  </section>
+  <section class="main-section" id="Conditional_statements">
+      <header>Conditional statements</header>
+      <article>
+          Python uses if...elif...else statements for conditional execution. The basic syntax is as follows:
+      <code>
+      if condition:
+          # code to execute if the condition is True
+      elif another_condition:
+          # code to execute if another_condition is True
+      else:
+          # code to execute if none of the above conditions are True
+      </code>
+  
+      Python evaluates the conditions one by one and executes the code block associated with the first True condition encountered. If none of the conditions are True, the code block under else (if present) will be executed. Note that the elif (short for else if) part is optional, and you can have multiple elif blocks if needed.
+  </article>
+  </section>
+  <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <article>
+          Python supports two primary types of loops: for loop and while loop.
+      The for loop is used to iterate over a sequence (e.g., list, tuple, string) and execute a block of code for each element in the sequence. The basic syntax is as follows:
+  
+      <code>
+      for item in sequence:
+          # code to execute for each item in the sequence
+      </code>
+  
+      The while loop is used to repeatedly execute a block of code as long as a given condition is True. The basic syntax is as follows:
+  
+      <code>
+      while condition:
+          # code to execute as long as the condition is True
+      </code>
+  
+      Be cautious when using a while loop to ensure the loop eventually terminates to prevent infinite loops.
+  </article>
+  </section>
+  <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <article>
+          Functions are reusable blocks of code in Python. They help organize code and promote code reusability. You can define a function using the def keyword, followed by the function name and a set of parentheses containing any function parameters.
+      <code>
+      def greet(name):
+          return "Hello, " + name
+      </code>
+  
+      The above function, greet(), takes one parameter called "name" and returns a greeting message using that name. You can call the function by passing an argument:
+  
+      <code>
+      print(greet("John"))  # Output: "Hello, John"
+      </code>
+  
+      Functions can have return statements that specify the value the function will return when called. If a function does not have a return statement, it implicitly returns None.
+  </article>
+  </section>
+  <section class="main-section" id="Lists">
+      <header>Lists</header>
+      <article>
+          Lists are one of the most commonly used data structures in Python. They are ordered collections of elements and are mutable, meaning you can change their contents after creation. To create a list, use square brackets [] and separate the elements with commas.
+      <code>
+      fruits = ['apple', 'banana', 'orange']
+      </code>
+  
+      You can access individual elements in a list using indexing:
+  
+      <code>
+      print(fruits[0])  # Output: 'apple'
+      print(fruits[1])  # Output: 'banana'
+      </code>
+  
+      Python also provides various list methods for manipulation, such as append(), remove(), pop(), and more.
+  </article>
+  </section>
+  <section class="main-section" id="Dictionaries">
+      <header>Dictionaries</header>
+      <article>
+          Dictionaries are collections of key-value pairs. Each value in a dictionary is associated with a unique key, allowing efficient data retrieval. To create a dictionary, use curly braces {} and separate the key-value pairs with colons.
+      <code>
+      person = {'name': 'John', 'age': 30, 'city': 'New York'}
+      </code>
+  
+      You can access the values using the keys:
+  
+      <code>
+      print(person['name'])  # Output: 'John'
+      print(person['age'])   # Output: 30
+      </code>
+  
+      Dictionaries are also mutable, so you can add, modify, or delete key-value pairs as needed.
+  </article>
+  </section>
+  <section class="main-section" id="Classes_and_objects">
+      <header>Classes and objects</header>
+      <article>
+          Python is an object-oriented programming language. It supports classes and objects for building reusable and modular code. A class is a blueprint for creating objects, and an object is an instance of a class.
+      <code>
+      class Dog:
+          def __init__(self, name, age):
+              self.name = name
+              self.age = age
+  
+          def bark(self):
+              return "Woof!"
+  
+      my_dog = Dog("Buddy", 3)
+      print(my_dog.name)  # Output: "Buddy"
+      print(my_dog.age)   # Output: 3
+      print(my_dog.bark())  # Output: "Woof!"
+      </code>
+  
+      In the above example, we define a Dog class with attributes (name and age) and a method (bark). We create an instance of the Dog class and access its attributes and methods using dot notation.
+  </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+        <ul>
+            <li>
+                All the documentation in this page is taken from
+                <a href="https://docs.python.org/3/" target="_blank">Python Official Documentation</a>
+            </li>
+            <li>
+                For tutorials, examples, and community resources, you can also refer to the Python website:
+                <a href="https://www.python.org/" target="_blank">Python.org</a>
+            </li>
+            <li>
+                To learn more about Python's data science capabilities, explore the documentation and tutorials of libraries like NumPy, Pandas, and Matplotlib.
+            </li>
+            <li>
+                For web development with Python, check out the documentation and guides of web frameworks like Django and Flask.
+            </li>
+            <li>
+                For machine learning and artificial intelligence with Python, explore the documentation of libraries like TensorFlow and PyTorch.
+            </li>
+            <li>
+                For server-side Python, you can find resources on building APIs and web services using frameworks like Flask and FastAPI.
+            </li>
+        </ul>
+    </article>
+</section>
+    </main>
+  </body>
+</html>

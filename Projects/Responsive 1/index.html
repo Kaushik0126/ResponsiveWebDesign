@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMIT Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">KMIT REVIEWS</h1>
+    <p id="description">Feel Free To Give Feedback</p>
+    <form id="survey-form">
+        <fieldset>
+            <img src="https://www.kmit.in/images/kmit-bar.png" alt="KMIT logo"></img>
+            <label for="name" id="name-label">Enter Your First Name: <input id="first-name" name="first-name" type="text" placeholder="Enter Your First Name" required/></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="Enter Your Last Name" required /></label>
+            <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Enter Your email" required /></label>
+            <!-- <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label> -->
+            <label for="number" id="number-label">Enter Your age: <input type="number" id="number" min="16" max="25" placeholder="Enter Your Age" required></label>
+        </fieldset>
+        <fieldset>
+            Select Your Year:
+            <br><br>
+            <label for="1"><input id="1" type="radio" name="year" value="year" class="inline" /> 1st Year</label>
+            <label for="2"><input id="2" type="radio" name="year" value="year" class="inline" /> 2nd Year</label>
+            <label for="3"><input id="3" type="radio" name="year" value="year" class="inline" /> 3rd Year</label>
+            <label for="4"><input id="4" type="radio" name="year" value="year" class="inline" /> 4th Year</label>
+            <label for="recommend">
+            <br>
+            Your favourite Places:
+            <br><br>
+            <input id="recommend" type="checkbox" value="Canteen" name="recommend" class="inline" /> Canteen
+            <input id="recommend" type="checkbox" value="Library" name="recommend" class="inline" /> Library
+            </label>
+          </fieldset>
+        <fieldset>
+            <label for="referrer">How will you rate your college?
+                <select id="referrer" name="referrer" required>
+                  <option value="">(select one)</option>
+                  <option value="1">Excellent</option>
+                  <option value="2">Good</option>
+                  <option value="3">Average</option>
+                  <option value="4">Bad</option>
+                </select>
+            </label>
+            <label for="feedback">Share Your feedback: <textarea name="feedback" id="textarea" cols="30" rows="3" placeholder="i love this college.."></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
